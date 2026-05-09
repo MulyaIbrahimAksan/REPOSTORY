@@ -1,0 +1,40 @@
+### TAHAP 1: PERSIAPAN DI KOMPUTER (LOCAL)
+# 1. Pastikan Anda sudah berada di dalam folder project Anda.
+# 2. Inisialisasi Git di dalam folder tersebut (hanya perlu dilakukan sekali)
+git init
+
+# 3. Masukkan semua file project Anda ke dalam antrean Git
+git add .
+
+# 4. Simpan perubahan dengan memberikan pesan/label
+git commit -m "commit pertama"
+
+# 5. Ubah nama branch utama menjadi 'main' (standar baru GitHub)
+git branch -M main
+
+
+### TAHAP 2: HUBUNGKAN KE GITHUB
+# 6. Hubungkan folder lokal Anda ke repository kosong di GitHub
+# (Ganti URL di bawah dengan link repository GitHub Anda yang baru)
+git remote add origin https://github.com/UsernameAnda/NamaRepoAnda.git
+
+# CATATAN: Jika sebelumnya sudah ada remote (tapi salah), gunakan perintah ini:
+# git remote set-url origin https://github.com/UsernameAnda/NamaRepoAnda.git
+
+
+### TAHAP 3: UPLOAD (PUSH) KE GITHUB
+# 7. Unggah kode Anda ke GitHub
+git push -u origin main
+
+# (Jika kedepannya Anda melakukan perubahan file lagi, Anda cukup mengulang langkah 3, 4, dan perintah: git push)
+
+
+### TAHAP 4: MENGAKTIFKAN GITHUB PAGES
+# Setelah berhasil di-push, lakukan langkah berikut di browser:
+# 1. Buka halaman Repository GitHub Anda.
+# 2. Klik tab "Settings" (ikon roda gigi di pojok kanan atas).
+# 3. Di menu sebelah kiri, cari dan klik "Pages".
+# 4. Di bagian "Build and deployment", pada dropdown "Source", pilih "Deploy from a branch".
+# 5. Di bagian "Branch", pilih branch "main", lalu biarkan foldernya "/ (root)".
+# 6. Klik tombol "Save".
+# 7. Tunggu sekitar 1-2 menit, lalu refresh halamannya. Link website Anda akan muncul di bagian atas!
